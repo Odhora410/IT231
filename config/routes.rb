@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get 'my_pages/about'
 
+  resources :microposts
   resources :users
-  root 'users#index'
+  root 'my_pages#home'
  end
